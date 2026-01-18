@@ -1,5 +1,5 @@
 body {
-    text-align: left;
+    text-align: center;
     width: 500px;
     padding-left: 10%;
     padding-right: 10%;
@@ -36,6 +36,10 @@ ol {
 
 li {
     padding-bottom: 20px;
+}
+
+.theme {
+    color: "black";
 }
 
 img {
