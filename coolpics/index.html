@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cool Pics</title>
     <meta name="author" content="David Bolivar">
     <meta name="description" content="Cool Pics">
-    <script defer src=""></script>
+    <script defer src="coolpics.js"></script>
     <link href="coolpics.css" rel="stylesheet">
 </head>
+
 <body>
-    
+
     <header>
         <h1>Cool Pics 📷</h1>
-        <nav id="menu">
+        <nav class="menu-btn" id="menu">
             <a href="#">Menu</a>
         </nav>
-        <nav id="links">
+        <nav class="hide links">
             <a href="#">Home</a>
             <a href="#">People</a>
             <a href="#">Places</a>
@@ -25,7 +27,7 @@
         </nav>
     </header>
     <h2>Current Work</h2>
-    <main>
+    <main class="pics">
         <img src="norris-sm.jpg" alt="coolpic">
         <img src="norris-sm.jpg" alt="coolpic">
         <img src="norris-sm.jpg" alt="coolpic">
@@ -36,8 +38,13 @@
         <img src="norris-sm.jpg" alt="coolpic">
         <img src="norris-sm.jpg" alt="coolpic">
     </main>
+    <dialog>
+        <img>
+        <button class="close-viewer">X</button>
+    </dialog>
     <footer>
         ©2026 David Bolivar
     </footer>
 </body>
+
 </html>
