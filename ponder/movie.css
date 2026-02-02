@@ -66,12 +66,14 @@ footer {
         display: grid;
         grid-template-columns: 100px 100px 100px;
     }
-    .movie{
-        display:grid;
+
+    .movie {
+        display: grid;
         grid-template-columns: 1fr 1fr;
         justify-content: center;
     }
-    .movie img{
+
+    .movie img {
         grid-row: 1/6;
     }
 }
