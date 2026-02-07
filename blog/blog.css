@@ -1,0 +1,72 @@
+h1 {
+    text-align: center;
+}
+
+hr {
+    border: #D4AF37 solid 1px;
+}
+
+nav {
+    color: #b30000;
+    text-align: right;
+}
+
+nav a {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+header {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #b30000;
+}
+
+.entry {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.book {
+    margin-right: 5vw;
+}
+
+.book img {
+    display: block;
+    justify-self: center;
+}
+
+.info p {
+    justify-self: right;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.vertical {
+    display: none;
+}
+
+footer {
+    text-align: center;
+}
+
+@media screen and (min-width: 1000px) {
+    .entry {
+        grid-template-columns: 1fr 42px 2fr;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .vertical {
+        display: block;
+        background-color: #D4AF37;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
