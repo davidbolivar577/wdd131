@@ -1,0 +1,116 @@
+body {
+    margin: auto;
+    font-size: 2vw;
+}
+
+.errors {
+    white-space: pre-line;
+    color: red;
+  }
+
+.card {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr 0.5fr;
+
+    max-width: 800px;
+}
+
+.front {
+    padding: 10px;
+    grid-area: 1 / 1 / 3 / 3;
+    z-index: 2;
+
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    aspect-ratio: 1.5 / 1;
+
+    background-color: gray;
+    border-radius: 10px;
+    box-shadow: 16px 32px 34px rgba(3, 7, 18, 0.17);
+
+}
+
+#total {
+    grid-area: 1 / 1 / 2 / 2;
+    margin: auto auto auto 0;
+}
+
+#logo {
+    margin: auto 0 0 auto;
+    font-size: 5vw;
+}
+
+#cardNumber {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+#cardNumber input,
+#cardHolder input {
+    width: 90%;
+    height: 50%;
+}
+
+#cardHolder {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+#cardExpiration {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+#cardExpiration label {
+    display: block;
+}
+
+#cardExpiration input {
+    width: 40%;
+    height: 50%;
+}
+
+.back {
+    grid-area: 2 / 2 / 5 / 4;
+
+    display: grid;
+    grid-template-columns: 8fr 2fr;
+    grid-template-rows: 1fr 2.5fr 2.5fr;
+
+    aspect-ratio: 1.5 / 1;
+
+    background-color: gray;
+    border-radius: 10px;
+    box-shadow: 16px 32px 34px rgba(3, 7, 18, 0.17);
+}
+
+#bar {
+    grid-area: 1 / 2 / 2 / 3;
+    background-color: black;
+    margin-top: 20%;
+    min-width: 100%;
+    min-height: 80%;
+}
+
+#cardCcv {
+    padding: 0 10% 0 10%;
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+#cardCcv label {
+    max-width: 100%;
+}
+
+#cardCcv input {
+    width: 80%;
+    height: 25%;
+}
+
+button {
+    grid-area: 4 / 3 / 5 / 4;
+    width: 100%;
+    height: 50%;
+    margin: auto auto 0 auto;
+    border-radius: 5px;
+}
