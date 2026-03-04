@@ -41,7 +41,7 @@ hr {
 }
 
 .gallery section {
-    flex: 0 1 460px;
+    flex: 0 1 360px;
 }
 
 @media screen and (min-width: 700px) {
@@ -58,7 +58,7 @@ hr {
     }
 
     .gallery section {
-        flex: 1 1 360px;
+        flex: 1 1 460px;
     }
 
     .media-card-image {
