@@ -9,25 +9,60 @@ h1 {
 }
 
 h1 img {
-    height: 1em;
+    height: 1.5em;
+}
+
+.search {
+    display: flex;
 }
 
 .search input {
-    width: 90%;
+    width: 100%;
+    height: 1.2em;
 }
 
 .search img {
-    width: 10%;
+    height:1em;
+    position: absolute;
+    right: .6em;
 }
-
-/* main {
-    margin: auto auto;
-} */
 
 .recipies {
     border: 2px solid black;
     border-radius: 5px;
     padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    column-gap: 10px;
+}
+
+.image {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.category {
+    background-color: lightgray;
+    height: fit-content;
+    width: fit-content;
+    padding: 5px;
+    border: 1px solid black;
+
+}
+
+.name {
+    font-family: "Amatic SC", sans-serif;
+    color: aqua;
+    font-size: 1.5em;
+    margin-top: 50px;
+    width: fit-content;
+    justify-content: left;
+}
+
+.rating {
+    width: fit-content;
+    justify-content: left;
 }
 
 .description {
@@ -39,10 +74,12 @@ footer {
     display: flex;
     flex-flow: column-reverse;
     margin-top: 30px;
+    justify-content: center;
 }
 
 .social {
     width: 200px;
+    margin: auto;
 }
 
 .social a {
@@ -52,8 +89,21 @@ footer {
 }
 
 @media screen and (min-width: 700px) {
+    .recipies {
+        height: 50vh;
+    }
+
+    .image {
+        height: 100%;
+        width: auto;
+    }
+
     .description {
         display: inline;
+        font-size: 1.2em;
+        justify-self: left;
+        text-align: left;
+        max-width: 50%;
     }
 
 
@@ -62,5 +112,9 @@ footer {
     footer {
         flex-flow: row;
         justify-content: space-between;
+    }
+
+    .social {
+        margin:unset;
     }
 }
