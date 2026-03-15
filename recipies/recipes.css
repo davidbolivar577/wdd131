@@ -27,7 +27,11 @@ h1 img {
     right: .6em;
 }
 
-.recipies {
+.recipes {
+    
+}
+
+.recipe {
     border: 2px solid black;
     border-radius: 5px;
     padding: 10px 10px;
@@ -89,7 +93,11 @@ footer {
 }
 
 @media screen and (min-width: 700px) {
-    .recipies {
+    .recipes {
+        
+    }
+
+    .recipe {
         height: 50vh;
     }
 
