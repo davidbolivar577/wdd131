@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css?family=Outfit&family=Inter");
+
+:root {
+    --size-row: 1;
+    --size-column: 1;
+    --primary-color: #F4F4F9;
+    --secondary-color: #2B2D42;
+    --accent1-color: #EF233C;
+    --accent2-color: #20BF55;
+
+}
+
+body {
+    background-color: var(--primary-color);
+    font-family: Inter;
+}
+
+header {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-family: Outfit;
+    max-height: 5%;
+    display: flex;
+    flex-direction: row;
+}
+
+h1 {
+    margin: auto auto auto 5%;
+}
+
+h2 {
+    text-align: center;
+    font-family: Outfit;
+}
+
+#logo {
+    height: 50px;
+    width: auto;
+}
+
+nav {
+    margin: auto 5% auto auto;
+}
+
+nav a{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.maze {
+    display: grid;
+    grid-template-rows: repeat(var(--size-row), 1fr);
+    grid-template-columns: repeat(var(--size-column), 1fr);
+    width: 75vh;
+    height: 75vh;
+    max-width: 75vw;
+    max-height: 75vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
+}
+
+.walls {
+    background-color: var(--secondary-color);
+}
+
+.player {
+    background-color: var(--accent1-color);
+}
+
+.finish {
+    background-color: var(--accent2-color);
+}
+
+.buttons {
+    position: sticky;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 5px;
+    max-width: 10%;
+    margin-left: 70%;
+    margin-right: 10px;
+}
+
+.buttons button {
+    width: 6vh;
+    height: 6vh;
+    max-width: 6vw;
+    max-height: 6vw;
+}
+
+#up {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+#left {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+#down {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+#right {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+h3 {
+    font-family: Outfit;
+}
+@media screen and (min-width: 700px) {
+    #logo {
+        height: 100px;
+    }
+
+    .maze {
+        margin-bottom: 0;
+    }
+}
